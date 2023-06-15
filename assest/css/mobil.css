@@ -118,7 +118,7 @@ body {
 .about-sg {
   background-color: #f7f7f7;
   background-size: auto;
-  height: 140vh;
+  height: 125vh;
 }
 .about-sg .about-andrew {
   padding: 10px;
@@ -192,7 +192,7 @@ body {
 
 .skills-sg {
   background-color: #fff;
-  height: 320vh;
+  height: 275vh;
 }
 .skills-sg .skills-andrew {
   padding: 10px;
@@ -377,7 +377,7 @@ body {
 }
 
 .exprience-sg {
-  height: 300vh;
+  height: 280vh;
   background-color: #f7f7f7;
 }
 .exprience-sg .exprince-cont {
@@ -464,7 +464,7 @@ body {
 
 .education-sg {
   background-color: #fff;
-  height: 210vh;
+  height: 200vh;
 }
 .education-sg .education-cont {
   padding: 10px;
@@ -550,7 +550,7 @@ body {
 
 .portfolio-sg {
   background-color: #fff;
-  height: 270vh;
+  height: 230vh;
 }
 .portfolio-sg .portfolio-cont {
   padding: 10px;
@@ -627,7 +627,7 @@ body {
 
 .contact-sg {
   background-color: #fff;
-  height: 210vh;
+  height: 200vh;
 }
 .contact-sg .contact-cont {
   padding: 10px;
@@ -713,7 +713,7 @@ body {
   color: #545454;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-left .c-m-l-icons {
-  width: 90%;
+  width: 95%;
   margin-top: 30px;
   margin-left: 8px;
 }
