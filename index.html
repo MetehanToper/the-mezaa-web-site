@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assest/css/main.css">
+    <script src="https://kit.fontawesome.com/7852e4b612.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assest/css/main.css" media="only screen and (min-width:451px)">
+    <link rel="stylesheet" href="./assest/css/mobil.css"  media="only screen and (max-width:450px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
-    
+    <script src="./assest/js/mobil-app.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7852e4b612.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <aside class="header-menu">
             <div class="logo">
                 <img src="./assest/img/logo.png" alt="logo">
+                <span class="logo-span">Andrew Smith</span>
+                <i class="fa-solid fa-bars 2 fa-2xl" id="ham-menu" style="color: #ffffff;" onclick="myFunction()"></i>
             </div>
             <nav class="menu">
-                <ul>
+                <ul id="my-links">
                     <li><a href="#home" >HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skills">SKILLS</a></li>
@@ -341,15 +347,15 @@
             </article>
             <article id="portfolio" class="portfolio-sg">
                 <div class="portfolio-cont">
-                    <h2>Portfolio</h2>
-                    <h3>Our portfolio features a variety of projects and services</h3>
+                    <h2>PORTFOLİO</h2>
+                    <h3>OUR PORTFOLİO FEATURES A VARİETY OF PROJECTS AND SERVİCES</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
                     <div class="portfolio-main">
                         <div class="work-1 work">
                             <img src="./assest/img/work1.jpg" alt="">
                             <div class="fig-plus">
                                 <div>
-                                    <img src="./assest/img/icon-plus.png" alt="plus">
+                                    <img class="plus-img" src="./assest/img/icon-plus.png" alt="plus">
                                     <h3>THE FLAVOUR RESTAURANT</h3>
                                     <span>Website Design & Development</span>
                                 </div>
@@ -359,7 +365,7 @@
                             <img src="./assest/img/work2.jpg" alt="">
                             <div class="fig-plus">
                                 <div>
-                                    <img src="./assest/img/icon-plus.png" alt="plus">
+                                    <img class="plus-img" src="./assest/img/icon-plus.png" alt="plus">
                                     <h3>HERBAL BEAUTY SALON</h3>
                                     <span>Photography</span>
                                 </div>
@@ -369,7 +375,7 @@
                             <img src="./assest/img/work3.jpg" alt="">
                             <div class="fig-plus">
                                 <div>
-                                    <img src="./assest/img/icon-plus.png" alt="plus">
+                                    <img class="plus-img" src="./assest/img/icon-plus.png" alt="plus">
                                     <h3>KAYRA MODELLERİ</h3>
                                     <span>Branding and Identity</span>
                                 </div>
@@ -379,7 +385,7 @@
                             <img src="./assest/img/work4.jpg" alt="">
                             <div class="fig-plus">
                                 <div>
-                                    <img src="./assest/img/icon-plus.png" alt="plus">
+                                    <img class="plus-img" src="./assest/img/icon-plus.png" alt="plus">
                                     <h3>FASHİON AND YOU</h3>
                                     <span>APPS and Web Design</span>
                                 </div>
@@ -389,7 +395,7 @@
                             <img src="./assest/img/work5.jpg" alt="">
                             <div class="fig-plus">
                                 <div>
-                                    <img src="./assest/img/icon-plus.png" alt="plus">
+                                    <img class="plus-img" src="./assest/img/icon-plus.png" alt="plus">
                                     <h3>WHOLE FOOD FLOUR</h3>
                                     <span>Branding and Identity</span>
                                 </div>

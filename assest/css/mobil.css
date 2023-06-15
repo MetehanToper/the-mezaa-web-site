@@ -1,76 +1,82 @@
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  box-sizing: border-box;
-  max-height: 100vh;
   margin: 0;
   padding: 0;
-}
-body ::-webkit-scrollbar {
-  display: none;
-}
-
-main,
-section {
-  display: flex;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-menu {
-  height: 100vh;
-  background-color: #000;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 450px;
+  margin: 0;
 }
-.header-menu .logo .logo-span, .header-menu .logo #ham-menu {
+.header-menu .logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header-menu .logo img {
   display: none;
 }
-.header-menu .menu {
+.header-menu .logo .logo-span {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 4px;
+}
+.header-menu #ham-menu {
+  display: inline-block;
+  margin-left: 100px;
+  padding: 11px;
+}
+.header-menu .menu #my-links {
+  display: none;
+  list-style-type: none;
+  text-decoration: none;
   font-family: "Oswald", sans-serif;
-  list-style: none;
-  text-decoration: none;
-  margin-top: 15px;
+  font-size: 1rem;
+  color: #fff;
 }
-.header-menu .menu ul {
-  text-align: left;
-  margin-top: 30px;
+.header-menu .menu #my-links ul {
+  margin: 0 0;
   padding: 0;
+  list-style-type: none;
+  display: none;
 }
-.header-menu .menu ul li {
-  border-bottom: 2px solid #545454;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-}
-.header-menu .menu ul li a {
+.header-menu .menu #my-links ul li {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
   list-style: none;
-  text-decoration: none;
-  color: #f7f7f7;
 }
-.header-menu .menu ul li :hover {
-  color: #ffb400;
+.header-menu .menu #my-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: 5px;
+  display: block;
+}
+.header-menu .menu #my-links ul li a :hover {
+  background-color: #fff;
+  color: black;
 }
 
 .section-home {
   background-image: url(../img/profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 800px;
-  margin-left: 200px;
+  height: 60vh;
+  margin-top: -10px;
   position: relative;
 }
 .section-home .circle-three {
   position: absolute;
   left: 100px;
-  top: 560px;
+  bottom: 10px;
   display: flex;
   gap: 15px;
 }
@@ -79,21 +85,21 @@ section {
   background-color: #fff;
 }
 .section-home .circle-three .circle_1 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border: 3px solid #fff;
   border-radius: 50%;
 }
 .section-home .text-header {
   font-family: "Oswald", sans-serif;
   color: #fff;
-  width: 750px;
-  margin-top: 40%;
-  padding-left: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .section-home .text-header h1 {
-  width: 300px;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 100;
   line-height: 50px;
 }
@@ -103,44 +109,37 @@ section {
 .section-home .text-header p {
   border-top: 2px solid rgba(247, 247, 247, 0.5);
   border-bottom: 2px solid rgba(247, 247, 247, 0.5);
-  color: rgba(247, 247, 247, 0.5);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 300px;
-  margin-top: -20px;
-  font-size: 1.3rem;
+  color: #f7f7f7;
+  font-size: 0.7rem;
+  padding: 2px;
+  margin-top: -25px;
 }
 
 .about-sg {
-  background-image: url(../img/about.jpg);
-  background-repeat: no-repeat;
+  background-color: #f7f7f7;
   background-size: auto;
-  overflow-y: scroll;
-  width: 800px;
-  height: 100vh;
+  height: 140vh;
 }
 .about-sg .about-andrew {
-  padding: 50px;
-  width: 700px;
+  padding: 10px;
 }
 .about-sg .about-andrew .about-header {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 5px solid #ffb400;
   width: -moz-fit-content;
   width: fit-content;
 }
 .about-sg .about-andrew .about-text {
-  margin-top: 50px;
-  width: 500px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .about-sg .about-andrew .about-text ul {
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #545454;
@@ -165,12 +164,12 @@ section {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   color: #545454;
-  width: 55%;
+  width: 90%;
   line-height: 25px;
 }
 .about-sg .about-andrew .btn {
   border: 3px solid #ffb400;
-  width: 40%;
+  width: 85%;
   height: 30px;
   text-align: center;
   padding: 6px;
@@ -188,38 +187,33 @@ section {
 }
 .about-sg .about-andrew img {
   width: 25%;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .skills-sg {
-  background-color: #f7f7f7;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 900px;
+  background-color: #fff;
+  height: 320vh;
 }
 .skills-sg .skills-andrew {
-  width: 800px;
-  height: 100vh;
-  padding: 50px;
+  padding: 10px;
 }
 .skills-sg .skills-andrew .skills-header {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 5px solid #ffb400;
   width: -moz-fit-content;
   width: fit-content;
 }
 .skills-sg .skills-andrew .skills-text {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 0;
-  width: 95%;
 }
 .skills-sg .skills-andrew .skills-text h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
   color: #000;
@@ -227,26 +221,27 @@ section {
 .skills-sg .skills-andrew .skills-text p {
   font-size: 1rem;
   color: #545454;
+  width: 90%;
   margin-top: 10px;
   line-height: 25px;
 }
 .skills-sg .skills-andrew .skills-con-sircle {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   border-bottom: 1px solid #545454;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .skills-sg .skills-andrew .skills-con-sircle .skills-con-flex-1,
 .skills-sg .skills-andrew .skills-con-sircle .skills-con-flex-2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
 }
 .skills-sg .skills-andrew .skills-con-sircle .sircle {
-  width: 50%;
+  width: 100%;
   height: 130px;
-  margin: 15px;
+  margin: 3px;
   display: flex;
 }
 .skills-sg .skills-andrew .skills-con-sircle .src-span {
@@ -263,15 +258,15 @@ section {
   font-weight: 400;
 }
 .skills-sg .skills-andrew .skills-con-sircle .src-text {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .skills-sg .skills-andrew .skills-con-sircle .src-text h4 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.7);
   margin-top: 15px;
-  width: 50%;
+  width: 30%;
 }
 .skills-sg .skills-andrew .skills-con-sircle .src-text p {
   margin-top: -30px;
@@ -280,11 +275,11 @@ section {
   color: rgba(0, 0, 0, 0.7);
 }
 .skills-sg .skills-andrew .src-text-knowlage {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .skills-sg .skills-andrew .src-text-knowlage h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .skills-sg .skills-andrew .src-text-knowlage p {
@@ -296,6 +291,8 @@ section {
 }
 .skills-sg .skills-andrew .src-text-knowlage .flex-list {
   display: flex;
+  flex-direction: column;
+  align-items: start;
   border-bottom: 1px solid #545454;
   padding-bottom: 50px;
 }
@@ -320,15 +317,15 @@ section {
   margin: 5px;
 }
 .skills-sg .skills-andrew .src-language {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .skills-sg .skills-andrew .src-language h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .skills-sg .skills-andrew .src-language p {
-  width: 92%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -360,17 +357,17 @@ section {
 .skills-sg .skills-andrew .src-language .progress-bar-main .pro-left .progress .p-bar-99 {
   width: 99%;
   height: 10px;
-  background-color: #545454;
+  background-color: #ffb400;
 }
 .skills-sg .skills-andrew .src-language .progress-bar-main .pro-left .progress .p-bar-80 {
   width: 80%;
   height: 10px;
-  background-color: #545454;
+  background-color: #ffb400;
 }
 .skills-sg .skills-andrew .src-language .progress-bar-main .pro-left .progress .p-bar-60 {
   width: 60%;
   height: 10px;
-  background-color: #545454;
+  background-color: #ffb400;
 }
 .skills-sg .skills-andrew .src-language .progress-bar-main .progress-bar .progress-bar-inner span {
   font-size: 2.5rem;
@@ -380,20 +377,17 @@ section {
 }
 
 .exprience-sg {
-  height: 100vh;
-  width: 900px;
-  overflow-y: scroll;
+  height: 300vh;
+  background-color: #f7f7f7;
 }
 .exprience-sg .exprince-cont {
-  padding: 50px;
-  width: 800px;
+  padding: 10px;
 }
 .exprience-sg .exprince-cont h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
-  margin: 0;
-  padding-bottom: 25px;
+  font-size: 2rem;
+  padding-bottom: 10px;
   border-bottom: 5px solid #ffb400;
   width: -moz-fit-content;
   width: fit-content;
@@ -402,40 +396,41 @@ section {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .exprience-sg .exprince-cont p {
-  width: 92%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #545454;
 }
 .exprience-sg .exprince-cont .exprince-main {
-  margin-top: 50px;
+  margin-top: 30px;
+  padding: 10px;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details {
   border-bottom: 1px solid #747474;
   border-top: 1px solid #747474;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
   display: flex;
+  flex-direction: column;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-right {
   display: flex;
-  gap: 15px;
-  width: 50%;
+  gap: 30px;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-right .right-img {
   text-align: center;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-right .right-img i {
-  font-size: 73px;
-  margin-top: 10px;
+  font-size: 60px;
+  margin-top: 15px;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-right .right-head h5 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   padding: 0;
@@ -443,8 +438,8 @@ section {
   margin-top: -3px;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-right .right-head h4 {
-  width: 450px;
-  font-size: 1.6rem;
+  width: 200px;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   padding: 0;
@@ -453,13 +448,14 @@ section {
   color: #545454;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-right .right-head span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   margin-top: -30px;
   padding: 0;
 }
 .exprience-sg .exprince-cont .exprince-main .exprince-details .exp-left {
-  width: 92%;
+  padding: 10px;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -467,21 +463,18 @@ section {
 }
 
 .education-sg {
-  background-color: #f7f7f7;
-  height: 100vh;
-  width: 900px;
-  overflow-y: scroll;
+  background-color: #fff;
+  height: 210vh;
 }
 .education-sg .education-cont {
-  padding: 50px;
-  width: 800px;
+  padding: 10px;
 }
 .education-sg .education-cont h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 5px solid #ffb400;
   width: -moz-fit-content;
   width: fit-content;
@@ -490,17 +483,17 @@ section {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .education-sg .education-cont p {
-  width: 92%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #545454;
 }
 .education-sg .education-cont .education-main {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .education-sg .education-cont .education-main .education-details {
   border-bottom: 1px solid #747474;
@@ -509,21 +502,21 @@ section {
   padding-bottom: 50px;
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
 }
 .education-sg .education-cont .education-main .education-details .education-right {
   display: flex;
-  gap: 15px;
-  width: 50%;
+  gap: 20px;
 }
 .education-sg .education-cont .education-main .education-details .education-right .edu-icon {
   text-align: center;
 }
 .education-sg .education-cont .education-main .education-details .education-right .edu-icon i {
-  font-size: 73px;
+  font-size: 60px;
   margin-top: 10px;
 }
 .education-sg .education-cont .education-main .education-details .education-right .edu-header h5 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   padding: 0;
@@ -531,8 +524,8 @@ section {
   margin-top: -3px;
 }
 .education-sg .education-cont .education-main .education-details .education-right .edu-header h4 {
-  width: 450px;
-  font-size: 1.6rem;
+  width: 200px;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   padding: 0;
@@ -541,13 +534,14 @@ section {
   color: #545454;
 }
 .education-sg .education-cont .education-main .education-details .education-right .edu-header span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   margin-top: -30px;
   padding: 0;
 }
 .education-sg .education-cont .education-main .education-details .education-left {
-  width: 92%;
+  padding: 10px;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -555,20 +549,18 @@ section {
 }
 
 .portfolio-sg {
-  height: 100vh;
-  width: 900px;
-  overflow-y: scroll;
+  background-color: #fff;
+  height: 270vh;
 }
 .portfolio-sg .portfolio-cont {
-  padding: 50px;
-  width: 800px;
+  padding: 10px;
 }
 .portfolio-sg .portfolio-cont h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 5px solid #ffb400;
   width: -moz-fit-content;
   width: fit-content;
@@ -580,18 +572,22 @@ section {
   margin-top: 50px;
 }
 .portfolio-sg .portfolio-cont p {
-  width: 92%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #545454;
 }
 .portfolio-sg .portfolio-cont .portfolio-main {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .portfolio-sg .portfolio-cont .portfolio-main .work {
-  margin-top: 50px;
+  margin-top: 30px;
+  padding: 10px;
   position: relative;
+}
+.portfolio-sg .portfolio-cont .portfolio-main .work img {
+  width: 90%;
 }
 .portfolio-sg .portfolio-cont .portfolio-main .work .fig-plus:hover {
   opacity: 1 !important;
@@ -601,11 +597,18 @@ section {
   text-align: center;
   border: 1px solid red;
   background-color: #ffb400;
-  width: 88%;
-  height: 476px;
+  width: 90%;
+  height: 260px;
   position: absolute;
   top: -5px;
   opacity: 0;
+}
+.portfolio-sg .portfolio-cont .portfolio-main .work .fig-plus .plus-img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 80px;
+  left: 160px;
 }
 .portfolio-sg .portfolio-cont .portfolio-main .work .fig-plus div {
   margin-top: 150px;
@@ -623,21 +626,18 @@ section {
 }
 
 .contact-sg {
-  background-color: #f7f7f7;
-  height: 100vh;
-  width: 900px;
-  overflow-y: scroll;
+  background-color: #fff;
+  height: 210vh;
 }
 .contact-sg .contact-cont {
-  padding: 50px;
-  width: 800px;
+  padding: 10px;
 }
 .contact-sg .contact-cont h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 5px solid #ffb400;
   width: -moz-fit-content;
   width: fit-content;
@@ -649,7 +649,7 @@ section {
   margin-top: 50px;
 }
 .contact-sg .contact-cont p {
-  width: 92%;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -663,9 +663,10 @@ section {
   padding-bottom: 50px;
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-right {
-  width: 50%;
+  width: 70%;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-right .contact-text {
   display: flex;
@@ -673,12 +674,12 @@ section {
   margin-top: 10px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-right .contact-text .contact-icon {
-  text-align: center;
   width: 30px;
+  padding: 10px;
+  margin-top: -10px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-right .contact-text .contact-icon i {
   font-size: 50px;
-  margin-top: 5px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-right .contact-text .contact-text-header h5 {
   font-size: 1rem;
@@ -686,7 +687,7 @@ section {
   font-weight: 600;
   padding: 0;
   margin-bottom: 0;
-  margin-top: -2px;
+  margin-top: 2px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-right .contact-text .contact-text-header span {
   font-size: 0.8rem;
@@ -696,24 +697,25 @@ section {
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-left {
   margin-left: 20px;
+  margin-top: 10px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-left h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  margin-top: -5px;
+  margin-top: -2px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-left p {
-  width: 75%;
+  width: 80%;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #545454;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-left .c-m-l-icons {
-  width: 60%;
+  width: 90%;
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 8px;
 }
 .contact-sg .contact-cont .contact-main .contact-main-1 .c-m-left .c-m-l-icons a i {
   font-size: 30px;
@@ -742,7 +744,7 @@ section {
   resize: none;
 }
 .contact-sg .contact-cont .contact-main .contact-main-2 #form1 .btn {
-  width: 15%;
+  width: 30%;
   height: 50px;
   margin-top: 20px;
   background-color: #fff;
@@ -758,10 +760,10 @@ section {
 }
 
 .blog-sg {
-  width: 900px;
+  width: 100%;
   height: 100vh;
   background-image: url(../img/profile-01.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=mobil.css.map */
